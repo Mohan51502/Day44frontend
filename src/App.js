@@ -25,7 +25,7 @@ function App() {
   const DashboardValid = async () => {
     let token = localStorage.getItem("usersdatatoken");
 
-    const res = await fetch("https://day44.onrender.com/validuser", {
+    const res = await fetch(`https://day44backend.onrender.com/validuser`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
